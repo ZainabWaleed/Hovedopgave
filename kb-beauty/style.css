@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+h1 {
+font-size: 24px;
+margin: 2rem;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/*
+body {
+    height: 100vh;
+    background-color: #000000;
+    background-image: url('jpg/KB_salon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+li, .booking_btn{
+list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.booking_btn {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+}
+
+li:hover {
+transform: scale(1.05);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
+/* HEADER */
+
+header {
+    position: relative;
+    padding: 0 2.5rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+}
+
+.booking_btn {
+  background-color: antiquewhite;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking_btn:hover {
+    scale: 1.05;
+}
+
+
+/* DROPDOWN MENU */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top:80px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.dropdown_menu .booking_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+/* FORSIDE CTA */
+
+#landingpage_cta {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#landingpage_cta a {
+text-decoration: none;
+background-color: antiquewhite;
+padding: 1rem;
+border-radius: 25px;
+}   
+
+ 
+/* RESPONSIV NAVBAR */
+
+@media(min-width: 901px) {
+    header {
+        background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    }
+}
+
+
+@media(max-width: 900px) {
+    .navbar .links,
+    .navbar .booking_btn {
+        display: none;
+    }
+}
+
+@media(max-width: 900px) {
+    .navbar .toggle_btn {
+        display: block;
+     }
+}
+
+@media(max-width: 900px) {
+    .dropdown_menu {
+        display: block;
+     }
+}
+
+@media(max-width: 580px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+     }
+}

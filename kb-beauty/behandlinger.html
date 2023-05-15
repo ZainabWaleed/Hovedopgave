@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>KB Beauty</title>
+
+    <style>
+        body {
+            background-color:rgb(222, 221, 220);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+            line-height:1.5;
+        }
+
+        .grid-container  {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+ background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px;
+}
+
+.grid-container h2, h3, p, img {
+ padding: 5px;
+}
+
+@media(max-width: 900px) {
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+   
+    </style>
+
+    <script src="https://kit.fontawesome.com/85a4855f9e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--HEADER TUTORIAL: https://www.youtube.com/watch?v=GdrbE-s5DgQ-->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo"><a href="forside.html"><img src="png/logo.png" width="150px"></a></div>
+
+            <ul class="links">
+                <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+                <li><a href="#">Efterpleje</a></li>
+                <li><a href="#">Kurser</a></li>
+                <li><a href="#">Betingelser</a></li>
+                <li><a href="#">Om</a></li>
+            </ul>
+            <a href="#" class="booking_btn">Booking</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #242424;"></i>
+            </div>
+
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+            <li><a href="#">Efterpleje</a></li>
+            <li><a href="#">Kurser</a></li>
+            <li><a href="#">Betingelser</a></li>
+            <li><a href="#">Om</a></li>
+            <li><a href="#" class="booking_btn">Booking</a>
+            </li>
+        </div>
+    </header>
+
+<section id="section_wrapper">
+
+    <h1>Behandlinger og priser</h1>
+
+    <div class="grid-container">
+
+        <div class="single_lashes">
+            <h2>Single Lashes</h2>
+            <img src="png/single_lashes.png" style="width: 100px; border-radius: 50%">
+            <h3>450 kr,-</h3>
+            <p>Single lashes er til dig, som ønsker en naturlig forlængelse og fylde af dine egne naturlige vipper. Det er en behandling, hvor der bliver påsat et kunstigt vippehår, ét af gangen, ovenpå dine egne naturvipper.</p>
+      
+            <p>Denne behandling varer ca. 90 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+        <div class="hybrid_lashes">
+            <h2>Hybrid/MIX Lashes</h2>
+            <img src="png/hybrid_lashes.png" style="width: 100px; border-radius: 50%">  
+            <h3>550 kr,-</h3>
+            <p>Hybrid/mix lashes er en blanding af Single Lashes og Volume lashes. Denne metode er ca. 50% single lashes, og 50% volume faner. Til dig som ønsker et fyldigere look end Single Lashes. </p>
+                
+        <p>Denne behandling varer ca. 100 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+        <div class="volume_lashes">
+            <h2>Volume Lashes</h2>
+            <img src="png/volume_lashes.png" style="width: 100px; border-radius: 50%">
+            <h3>650 kr,-</h3>
+            <p>Volume lashes er til dig, der ønsker et fyldigt og mere dramatisk look. Med Volume vipper, bruger vi mellem 4-9 kunstig vippehår på ét af dine egne.</p>
+<p>Denne behandling varer ca. 110 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+        <div class="mega_volume_lashes">
+            <h2>Mega Volume</h2>
+            <img src="png/volume_lashes.png" style="width: 100px; border-radius: 50%">
+            <h3>750 kr,-</h3>
+            <p>Mega Volume er den mest dramatiske style jeg tilbyder. Her bruges også Volume metoden, men med så mange vipper, som muligt ift. dine naturvipper og ønsker.</p>
+                
+            <p>behandling varer ca. 120 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+        <div class="single_lashes_opfyldning">
+            <h2>Single Lashes Opfyldning</h2>
+            <h3>350 kr,-</h3>
+            <p>Til dig som har mistet 50% af dine vippe extensions. Er der faldet mere end 50% betragtes det som et nyt sæt. Denne behandling varer ca. 60 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!
+            <br>OBS! Er dine vipper lavet et andet sted, opkræves det samme beløb som et nyt sæt.</p>
+        </div>
+
+        <div class="hybrid_lashes_opfyldning">
+            <h2>Hybrid/MIX Lashes Opfyldning</h2>
+            <h3>450 kr,-</h3>
+            <p>Til dig som har mistet 50% af dine vippe extensions. Er der faldet mere end 50% betragtes det som et nyt sæt. Denne behandling varer ca. 60 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!
+            <br>OBS! Er dine vipper lavet et andet sted, opkræves det samme beløb som et nyt sæt.</p>
+        </div>
+
+        <div class="volume_lashes_opfyldning">
+            <h2>Volume Lashes Opfyldning</h2>
+            <h3>550 kr,-</h3>
+            <p>Til dig som har mistet 50% af dine vippe extensions. Er der faldet mere end 50% betragtes det som et nyt sæt. Denne behandling varer ca. 60 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!
+            <br>OBS! Er dine vipper lavet et andet sted, opkræves det samme beløb som et nyt sæt.</p>
+
+        </div>
+
+        <div class="mega_volume_lashes_opfyldning">
+            <h2>Mega Volume Opfyldning</h2>
+            <h3>650 kr,-</h3>
+            <p>Til dig som har mistet 50% af dine vippe extensions. Er der faldet mere end 50% betragtes det som et nyt sæt. Denne behandling varer ca. 60 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!
+            <br>OBS! Er dine vipper lavet et andet sted, opkræves det samme beløb som et nyt sæt.
+            </p>
+        </div>
+
+        <div class="vippe_rens">
+            <h2>Vippe Rens</h2>
+            <h3>50 kr,-</h3>
+            <p>Til dig, der ønsker at få renset sine vipper inden påsætning af nyt sæt. Dine vipper bliver renset med vippeshampoo og efterfulgt plejet med en primer. Dette resulterer i bedre holdbarhed.
+                <br>Denne behandling varer ca. 20 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+        <div class="fjernelse">
+            <h2>Fjernelse af vipper</h2>
+            <h3>150 kr,-</h3>
+            <p>Til dig, der ænsker at få fjernet sine vippe extensions. Denne behandling varer ca. 30 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+        <div class="lash_lift">
+            <h2>Lash Lift</h2>
+            <h3>350 kr,-</h3>
+            <p>Et lash lift er en behandling, hvor man får et semi-permanent buk af sine egne naturvipper - Gør dine naturvipper mere synlige og fremtrædende.
+            <br>Denne behandling varer ca. 45 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+        <div class="lash_lift_farve">
+            <h2>Lash Lift</h2>
+            <h3>450 kr,-</h3>
+            <p>Et lash lift er en behandling, hvor man får et semi-permanent buk af sine egne naturvipper - Gør dine naturvipper mere synlige og fremtrædende.Har man lyse vipper af natur, vil farven hjælpe med at bringe ens naturvipper frem!
+            <br>Denne behandling varer ca. 45 minutter. Tiden kan dog varierer afhængigt af dine naturvipper!</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    <script>
+        /* Dropdown menu åbner ved klik på bar-icon*/
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>

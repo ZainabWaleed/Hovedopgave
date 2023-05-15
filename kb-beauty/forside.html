@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>KB Beauty</title>
+
+    <script src="https://kit.fontawesome.com/85a4855f9e.js" crossorigin="anonymous"></script>
+
+    <style>
+
+body {
+    height: 100vh;
+    background-color: #000000;
+    background-image: url('jpg/KB_salon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!--HEADER TUTORIAL: https://www.youtube.com/watch?v=GdrbE-s5DgQ-->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo"><a href="forside.html"><img src="png/logo.png" width="150px"></a></div>
+
+            <ul class="links">
+                <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+                <li><a href="#">Efterpleje</a></li>
+                <li><a href="#">Kurser</a></li>
+                <li><a href="#">Betingelser</a></li>
+                <li><a href="#">Om</a></li>
+            </ul>
+            <a href="#" class="booking_btn">Booking</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #242424;"></i>
+            </div>
+
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+            <li><a href="#">Efterpleje</a></li>
+            <li><a href="#">Kurser</a></li>
+            <li><a href="#">Betingelser</a></li>
+            <li><a href="#">Om</a></li>
+            <li><a href="#" class="booking_btn">Booking</a>
+            </li>
+        </div>
+    </header>
+
+
+<section id="landingpage_cta">
+    <h1>Velkommen til KB Beauty</h1>
+    <a href="#">Book tid her</a>
+</section>
+
+
+
+    
+    <script>
+        /* Dropdown menu åbner ved klik på bar-icon*/
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>

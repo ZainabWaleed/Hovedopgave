@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>KB Beauty</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/85a4855f9e.js" crossorigin="anonymous"></script>
+
+    <style>
+
+body {
+            background-color:rgb(222, 221, 220);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+            line-height:1.5;
+        }
+
+        .grid-container  {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        gap: 100px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+
+      .grid-container > div {
+ /*background-color: rgba(255, 255, 255, 0.3);*/
+ /*border: solid 10px rgba(255, 255, 255, 0.3);
+  border-radius: 25px;*/
+  background-color: #eeecea;
+  border-radius: 25px;
+  box-shadow: 2px 4px 8px #8a8a8a;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px;
+}
+
+.grid-container h2, .grid-container h3, .grid-container p, .grid-container img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+ padding-left: 25px;
+ padding-right: 25px;
+}
+
+
+@media(max-width: 901px) {
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+    </style>
+</head>
+
+
+<body>
+
+<!--HEADER TUTORIAL: https://www.youtube.com/watch?v=GdrbE-s5DgQ-->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo"><a href="forside.html"><img src="png/logo.png" width="150px"></a></div>
+
+            <ul class="links">
+                <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+                <li><a href="#">Efterpleje</a></li>
+                <li><a href="kurser.html">Kurser</a></li>
+                <li><a href="#">Betingelser</a></li>
+                <li><a href="#">Om</a></li>
+            </ul>
+            <a href="#" class="booking_btn">Booking</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #242424;"></i>
+            </div>
+
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+            <li><a href="#">Efterpleje</a></li>
+            <li><a href="kurser.html">Kurser</a></li>
+            <li><a href="#">Betingelser</a></li>
+            <li><a href="#">Om</a></li>
+            <li><a href="#" class="booking_btn">Booking</a>
+            </li>
+        </div>
+    </header>
+
+
+<section id="sectionwrappe_kurser">
+
+    <h1>KB Beauty Academy</h1>
+
+    <h2>Har du en drøm om, at blive din egen chef og arbejde i beauty branchen?</h2>
+    <h2>Så kan KB Beauty Academy hjælpe dig på vej! <br>
+    Vi tilbyder både vippeteknikker kurser og negleteknikker kurser.</h2>
+
+    <div class="grid-container">
+
+        <div class="vippe_kursus">
+            <h2>Vippeteknikker kursus</h2>
+            <img src="png/Lash_kursus.PNG" style="width: 300px; border-radius: 15%">
+      <h3>$ Pris</h3>
+
+      <p>Beskrivelse</p>
+        </div>
+
+        <div class="Negle_kursus">
+            <h2>Negleteknikker kursus</h2>
+            <img src="jpg/Negle_kursus.jpg" style="width: 300px; border-radius: 15%">
+            <h3>$ Pris</h3>
+            
+            <p>Beskrivelse</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<footer>
+    <p>KB Beauty</p>
+    <p>Langgade 191, 2500 Valby</p>
+    <p>Tlf.: 53 53 18 82</p>
+    <p>Email: kbbeauty@gmail.com</p>
+    <p>CVR: 41839945</p>
+
+<p><strong>Åbningstider</strong></p>
+<p>Mandag: 10:00 - 17:00</p>
+<p>Tirsdag: LUKKET</p>
+<p>Onsdag: 10:00 - 19:00</p>
+<p>Torsdag: 10:00 - 19:00</p>
+<p>Fredag: 10:00 - 16:00</p>
+<p>Lørdag: LUKKET</p>
+<p>Søndag: 11:00 - 16:00</p>
+
+</footer>
+    
+    <script>
+        /* Dropdown menu åbner ved klik på bar-icon*/
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>

@@ -21,14 +21,6 @@
 
 <style>
 
-body {
-    height: 100vh;
-    background-image: url('landingpage/landingspage_02.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 
 </style>
 
@@ -50,10 +42,9 @@ body {
                 <li><a href="kurser.html">Kurser</a></li>
                 <li><a href="betingelser.html">Betingelser</a></li>
                 <li><a href="om.html">Om</a></li>
-                <li><a href="#">Kontakt</a></li>
             </ul>
 
-            <a href="#" class="booking_btn">Booking</a>
+            <a href="#" class="booking_btn"><img src="ikoner/kalender_ikon.png" alt="Kalender ikon" width="12px"> Booking</a>
 
 
             <div class="toggle_btn">
@@ -69,7 +60,6 @@ body {
             <li><a href="kurser.html">Kurser</a></li>
             <li><a href="betingelser.html">Betingelser</a></li>
             <li><a href="om.html">Om</a></li>
-            <li><a href="#">Kontakt</a></li>
             <li><a href="#" class="booking_btn">Booking</a></li>
         </ul>
         </div>
@@ -77,85 +67,40 @@ body {
 
     <!-- HEADER SLUT -->
 
+    <section id="betingelser">
 
-    <!-- FORSIDE CALL TO ACTION KNAP -->
-<section id="landingpage_cta">
-    <h1>Velkommen til KB Beauty</h1>
-    <h2>......</h2>
-    <a href="#">Book tid her</a>
-</section>
+    <h1>Betingelser</h1>
+    <h2>Når du booker en tid accepterer du følgende betingelser:</h2>
 
 
-<!-- BILLEDE KARRUSEL-->
+    <div class="grid_container">
 
-<section id="slide-show">
+        <div id="grid_element">
+           <h2>Afbudspolitik</h2>
+           <p>Jeg har en 24-timers afbudspolitik. Kom hverken for tidligt eller for sent til din behandling. <br>
+            Ønsker du at melde afbud på din tid, kan du gøre dette via. den bekræftelses email du modtager, når du har booket tid.</p>
+        </div>
 
-    <div class="slideshow-container">
+        <div id="grid_element">
+           <h2>Forsinkelser</h2>
+           <p>Er man 10 minutter forsinket eller mere, bliver der pålagt et gebyr på 150,- kr.</p>
+        </div>
 
-    <h1>KB Beauty er lokaliseret centralt i Storkøbenhavn 💖</h1>
-    <h2>Salonen ligger tæt på både Danshøj St. og bus, og der er gode parkeringsmuligheder til dig som er bilist.</h2>
+        <div id="grid_element">
+           <h2>Udeblivelser</h2>
+           <p>Udebliver man fra sin tid, bliver der påkrævet det fulde beløb. Man kan ikke booke en ny tid før beløbet er betalt.</p>
+        </div>
 
-    <a href="#">Læs mere om KB Beauty</a>
+        <div id="grid_element">
+           <h2>Garanti</h2>
+           <p>Der er 3 dages garanti på vipper lavet hos mig, hvis de falder af eller der forekommer en allergisk reaktion. Er der dog gået mere end 3 dage siden påsættelsen, fratager jeg mig retten som vippe teknikker, da det ikke kan være mine produkter som er grunden, samt er der blevet brugt tid på det pågældende sæt. Jeg kan tilbyde retning eller aftagning dog ingen penge retur.</p>
+        </div>
+
+        
 
     </div>
-
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <img src="carrousel/slide_1.jpg" alt="KB Beauty venterum" style="width:350px">
-    </div>
-    
-    <div class="mySlides fade">
-      <img src="carrousel/slide_2.jpg" alt="KB Beauty salon facade" style="width:350px">
-    </div>
-    
-    <div class="mySlides fade">
-      <img src="carrousel/slide_3.jpg" alt="KB Beauty disk" style="width:350px">
-    </div>
-    
-    </div>
-
-
 
 </section>
-
-
-
-
-
-   <!-- FORSIDE INFOBOKSE-->
-<section id="landingpage_infobokse">
-
-    <div class="landingpage_grid_container">
- 
-    <div class="infoboks">
-        <h2>Behandlinger</h2>
-        <img src="png/hybrid_lashes.png" alt="KB Beauty Hybrid EyeLash Extension på øje" style="width: 275px; height: 290px">
-        <p><a href="#">Læs mere</a></p>
-    </div>
-
-    <div class="infoboks">
-<h2>KB Beauty Akademy kurser</h2>
-        <img src="png/Lash_kursus.PNG" alt="KB Beauty kursus billede af salon" style="width: 275px; height: 290px">
-    <p> <a href="#">Læs mere</a></p>
-    </div>
-
-    <div class="infoboks">
-        <h2>Om klinikken</h2>
-        <img src="jpg/KB_salon.jpg" alt="KB Beauty salon venteværelse stole" style="width: 275px; height: 290px">
-    <p> <a href="#">Læs mere</a></p>
-    </div>
-
-</div>
-</section>
-
-
-
-
-
-<!--Instagram Plugin-->
-<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-a1f2a2b9-9e5f-4029-b9ca-04a4a6a0ccb8"></div>
 
 
 <footer>
@@ -195,23 +140,6 @@ body {
             : 'fa-solid fa-bars'
         }
 
-
-        /*SLIDESHOW JS*/
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 3000); 
-}
 
     </script>
 

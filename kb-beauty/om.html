@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>KB Beauty</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/85a4855f9e.js" crossorigin="anonymous"></script>
+
+
+<style>
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #9e9e9e;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- HEADER TUTORIAL: https://www.youtube.com/watch?v=GdrbE-s5DgQ -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo"><a href="forside.html"><img src="png/logo.png" alt="KB Beauty logo" width="150px"></a></div>
+
+            <ul class="links">
+                <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+                <li><a href="#">Efterpleje</a></li>
+                <li><a href="kurser.html">Kurser</a></li>
+                <li><a href="#">Betingelser</a></li>
+                <li><a href="#">Om</a></li>
+            </ul>
+
+            <a href="#" class="booking_btn"><img src="ikoner/kalender_ikon.png" alt="Kalender ikon" width="12px"> Booking</a>
+
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #191815;"></i>
+            </div>
+
+        </div>
+
+        <div class="dropdown_menu">
+            <ul>
+            <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+            <li><a href="#">Efterpleje</a></li>
+            <li><a href="kurser.html">Kurser</a></li>
+            <li><a href="#">Betingelser</a></li>
+            <li><a href="#">Om</a></li>
+            <li><a href="#" class="booking_btn">Booking</a></li>
+        </ul>
+        </div>
+    </header>
+
+    <!-- HEADER SLUT -->
+
+
+<!-- INTRO TEKST-->
+
+<section id="om_intro">
+    <div class="om_text">
+        <h1>Mit navn er Kayce Bernado, og jeg er din skønhedsbehandler ❤️</h1>
+        <h2>Mine mange år i skønhedsbranchen har lært mig, at ingen kunder er ens og derfor er dit ønske og tanker altid min første prioritet.</h2>   
+        
+        <h2>Jeg blev uddannet certificeret Negle teknikker tilbage i 2019. Siden da, har jeg udviklet mine kompetencer og er siden 2020 certificeret vippeteknikker også.</h2> 
+    </div>
+
+    <div class="om_img">
+    <img src="jpg/kayce_01.jpg" alt="Billede af Kayce der udfører en vippe-behandling">
+    </div>
+</section>
+
+
+<section id="om_salon">
+
+    <div class="om_img">
+        <img src="jpg/klinikken_01.jpg" alt="KB beauty salon venterum">
+        </div>
+
+
+    <div class="om_text">
+        <h1>KB Beauty er lokaliseret centralt i Storkøbenhavn 💖</h1>
+        <h2>Du finder KB Beauty centralt placeret i Valby i mit nye lokale på <strong>Valby Langgade 191, 2500 Valby.</strong></h2>
+
+        <h2>Åbningstider:</h2>
+<p>Mandag: 10:00 - 17:00</p>
+<p>Tirsdag: LUKKET</p>
+<p>Onsdag: 10:00 - 19:00</p>
+<p>Torsdag: 10:00 - 19:00</p>
+<p>Fredag: 10:00 - 16:00</p>
+<p>Lørdag: LUKKET</p>
+<p>Søndag: 11:00 - 16:00</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+</footer>
+
+
+    
+    <script>
+        /* DEFINERE SELECTORER */
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        /* FUNKTION TIL ON-CLICK AF MENUEN*/
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+        /* NÅR DROPDOWN ER ÅBEN = KRYDS I STEDET FOR MENUBARER*/
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>

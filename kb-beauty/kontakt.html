@@ -25,52 +25,55 @@
 <script src="https://kit.fontawesome.com/85a4855f9e.js" crossorigin="anonymous"></script>
 
 
-
 <style>
 
-    body {
-        background-color: #ffffff;
-    }
+body {
+    background-color:#ffffff;
+}
 
-    h1 {
+h1 {
     text-align: center;
 }
 
-#betingelser h2 {
+#kontakt h2 {
     font-weight: 300;
     text-align: center;
+    max-width: 900px;
     margin: 0 auto;
     padding-bottom: 20px;
     font-size: 16px;
 }
 
-#betingelser p {
+#kontakt p {
+    font-size: 16px;
     margin: 10px;
-    line-height:1.5;
+}
+
+#kontakt p span {
+    font-size: 10px;
+    color: #191815;
+    text-decoration: none;
 }
 
 #grid_element h2 {
     font-weight: 600;
 }
 
+
 header{
-    background: linear-gradient(180deg, #fbf7f1, #e3dace);
-    background-size: 400% 400%;
-    box-shadow: 0px 1px 6px #c0b9b1;
+background: linear-gradient(180deg, #fbf7f1, #e3dace);
+background-size: 400% 400%;
+box-shadow: 0px 1px 6px #c0b9b1;
 
-    /*https://www.gradient-animator.com/*/
-
-
-    animation: gradient_menu 6s ease infinite;
+ /*https://www.gradient-animator.com/*/
+animation: gradient_menu 6s ease infinite;
 }
-
 
 @keyframes gradient_menu {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
 }
-
 </style>
 
 </head>
@@ -118,50 +121,46 @@ header{
 
 <!-- HEADER SLUT -->
 
-    <section id="betingelser">
 
-    <h1>Betingelser</h1>
-    <h2>Når du booker en tid, accepterer du følgende betingelser:</h2>
+<section id="kontakt">
+
+    <h1>Kontakt informationer</h1>
+    <h2>Har du et spørgsmål, eller brug for at komme i kontakt med mig? Så kan du henvende dig på følgende måder:</h2>
 
 
     <div class="grid_container">
 
         <div id="grid_element">
-            <img src="ikoner_svg/kalender_ikon_pink.svg" alt="kalender ikon" width="50px">
-           <h2>Afbudspolitik</h2>
-           <p>Jeg har en 24-timers afbudspolitik. Kom hverken for tidligt eller for sent til din behandling. <br>
-            Ønsker du at melde afbud på din tid, kan du gøre dette via. den bekræftelses email du modtager, når du har booket tid.</p>
+            <img src="ikoner_svg/tlf_ikon_pink.svg" alt="telefon ikon" width="50px">
+           <h2>Telefon</h2>
+           <p>+45 53531382</p>
         </div>
 
         <div id="grid_element">
-            <img src="ikoner_svg/ur_ikon_pink.svg" alt="ur ikon" width="50px">
-           <h2>Forsinkelser</h2>
-           <p>Er man 10 minutter forsinket eller mere, bliver der pålagt et gebyr på 150 kr,- Det skyldes, at jeg booker flere kunder ind på en dag, så forsinkelser går ud over den nææste kunde.</p>
+            <img src="ikoner_svg/mail_ikon_pink.svg" alt="mail ikon" width="50px">
+           <h2>Email</h2>
+           <p>kbbeauty.dk@gmail.com</p>
         </div>
 
         <div id="grid_element">
-            <img src="ikoner_svg/X_ikon_pink.svg" alt="kalender ikon" width="50px">
-           <h2>Udeblivelser</h2>
-           <p>Udebliver man fra sin tid, bliver der påkrævet det fulde beløb for behandlingen. Man kan ikke booke en ny tid før beløbet er betalt.</p>
-        </div>
-
-        <div id="grid_element">
-            <img src="ikoner_svg/garanti_ikon_pink.svg" alt="sæbe ikon" width="50px">
-           <h2>Garanti</h2>
-           <p>Der er 3 dages garanti på vipper lavet hos mig, hvis de falder af eller der forekommer en allergisk reaktion. Er der dog gået mere end 3 dage siden påsættelsen, fratager jeg mig retten som vippe teknikker, da det ikke kan være mine produkter som er grunden, samt er der blevet brugt tid på det pågældende sæt. Jeg kan tilbyde retning eller aftagning dog ingen penge retur.</p>
+            <img src="ikoner_svg/lokation_ikon_pink.svg" alt="lokation ikon" width="50px">
+           <h2>Salonen</h2>
+           <p>Valby Langgade 191, 2500 Valby.</p>
+           <p><span>OBS! Vær opmærksom på, at åbningstiderne kan variere, alt efter, om der er booket tider i det tidsrum.</span></p>
         </div>
 
         
-
     </div>
 
+
 </section>
+
+
 
 
 <!-- FOOTER -->
 
 <footer>
-
     <ul class="socialmedia">
         <li><a href="https://www.instagram.com/kbbeauty.dk/" target="_blank"><img src="ikoner_png/insta_ikon.svg" alt="Instagram ikon" width="60px"></a></li>
         <li><a href="https://www.facebook.com/KBBeauty.dk" target="_blank"><img src="ikoner_png/facebook_ikon.svg" alt="Facebook ikon" width="60px"></a></li>
@@ -213,6 +212,7 @@ header{
 </footer>
 
 
+
     
     <script>
         /* DEFINERE SELECTORER */
@@ -230,13 +230,7 @@ header{
             ? 'fa-solid fa-xmark'
             : 'fa-solid fa-bars'
         }
-
-
-    </script>
-
-
-
-<script src="scripts.js"></script>
+</script>
 
 </body>
 

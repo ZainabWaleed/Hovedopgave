@@ -5,68 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon_io_2/favicon.ico">
     
-    <title>KB Beauty</title>
+    <title>KB Beauty, book tid til Eyelash Extensions</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="Hos KB Beauty kan du få lavet Eyelash Extensions af en certificeret og erfaren vippeteknikker, der prioriterer dine ønsker og behov.">
+    <meta name="keywords" content="KB Beauty, Eyelash Extensions, vippebehandling, vippeteknikker, Lash Lift, Single Lashes, Hybrid Lashes, Volume Lashes, vippekursus, neglekursus">
+
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/85a4855f9e.js" crossorigin="anonymous"></script>
+<!-- MENU IKONER TIL RESPONSIV NAVBAR -->
+<script src="https://kit.fontawesome.com/85a4855f9e.js" crossorigin="anonymous"></script>
 
     <style>
 
 body {
-            background-color:rgb(222, 221, 220);
+            background-color:#ffffff;
         }
 
-        h1 {
-            text-align: center;
-        }
 
-        p {
-            margin: 10px;
-            line-height:1.5;
-        }
+        header{
+    background: linear-gradient(180deg, #fbf7f1, #e3dace);
+    background-size: 400% 400%;
+    box-shadow: 0px 1px 6px #c0b9b1;
 
-        .grid-container  {
-        display: grid;
-        grid-template-columns: auto;
-        width: 100%;
-        gap: 100px;
-        padding: 10px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-      }
-
-      .grid-container > div {
- /*background-color: rgba(255, 255, 255, 0.3);*/
- /*border: solid 10px rgba(255, 255, 255, 0.3);
-  border-radius: 25px;*/
-  background-color: #eeecea;
-  border-radius: 25px;
-  box-shadow: 2px 4px 8px #8a8a8a;
-  text-align: center;
-  padding: 10px 0;
-  margin: 10px;
-}
-
-.grid-container h2, .grid-container h3, .grid-container p, .grid-container img {
-    padding-top: 15px;
-    padding-bottom: 15px;
- padding-left: 25px;
- padding-right: 25px;
+    /*https://www.gradient-animator.com/*/
+    animation: gradient_menu 6s ease infinite;
 }
 
 
-@media(max-width: 901px) {
-    .grid-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+@keyframes gradient_menu {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
 }
+
+#kurser h1 {
+    text-align: center;
+}
+
+
 
     </style>
 </head>
@@ -74,64 +59,89 @@ body {
 
 <body>
 
-<!--HEADER TUTORIAL: https://www.youtube.com/watch?v=GdrbE-s5DgQ-->
+<!-- HEADER TUTORIAL: https://www.youtube.com/watch?v=GdrbE-s5DgQ -->
 
-    <header>
-        <div class="navbar">
+<header>
+    <div class="navbar">
 
-            <div class="logo"><a href="forside.html"><img src="png/logo.png" width="150px"></a></div>
+        <div class="logo"><a href="forside.html"><img src="png/logo.png" alt="KB Beauty logo" width="150px"></a></div>
 
-            <ul class="links">
-                <li><a href="behandlinger.html">Behandlinger & priser</a></li>
-                <li><a href="#">Efterpleje</a></li>
-                <li><a href="kurser.html">Kurser</a></li>
-                <li><a href="#">Betingelser</a></li>
-                <li><a href="#">Om</a></li>
-            </ul>
-            <a href="#" class="booking_btn">Booking</a>
-
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars" style="color: #242424;"></i>
-            </div>
-
-        </div>
-
-        <div class="dropdown_menu">
+        <ul class="links">
             <li><a href="behandlinger.html">Behandlinger & priser</a></li>
-            <li><a href="#">Efterpleje</a></li>
+            <li><a href="pleje.html">Efterpleje</a></li>
             <li><a href="kurser.html">Kurser</a></li>
-            <li><a href="#">Betingelser</a></li>
-            <li><a href="#">Om</a></li>
-            <li><a href="#" class="booking_btn">Booking</a>
-            </li>
+            <li><a href="betingelser.html">Betingelser</a></li>
+            <li><a href="om.html">Om</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <a href="https://kbbeauty.klikbook.dk/" target="_blank" class="booking_btn">Booking</a>
+
+
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars" style="color: #191815;"></i>
         </div>
-    </header>
+
+    </div>
+
+    <div class="dropdown_menu">
+        <ul>
+        <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+        <li><a href="pleje.html">Efterpleje</a></li>
+        <li><a href="kurser.html">Kurser</a></li>
+        <li><a href="betingelser.html">Betingelser</a></li>
+        <li><a href="om.html">Om</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="https://kbbeauty.klikbook.dk/" target="_blank" class="booking_btn">Booking</a></li>
+    </ul>
+    </div>
+</header>
+
+<!-- HEADER SLUT -->
 
 
-<section id="sectionwrappe_kurser">
+<section id="kurser">
 
     <h1>KB Beauty Academy</h1>
 
-    <h2>Har du en drøm om, at blive din egen chef og arbejde i beauty branchen?</h2>
-    <h2>Så kan KB Beauty Academy hjælpe dig på vej! <br>
-    Vi tilbyder både vippeteknikker kurser og negleteknikker kurser.</h2>
+    <h2>Har du en drøm om, at blive din egen chef og arbejde i beauty branchen? Så kan KB Beauty Academy hjælpe dig på vej! Vi tilbyder både vippeteknikker-kursus og negleteknikker-kursus!</h2>
+<h2>Kurserne afholdes i salonen i løbet af 3 dage. Kursus dage varierer alt efter efterspørgsel, hvilket aftales indbyrdes.</h2>
+    <h2>Lyder det som noget for dig? Så kontakt KB Beauty Academy på mail: <strong>kbbeauty.dk@gmail.com</strong>, for yderligere info eller for tilmelding 💖</h2>
 
-    <div class="grid-container">
+    <div class="grid_container">
 
-        <div class="vippe_kursus">
-            <h2>Vippeteknikker kursus</h2>
-            <img src="png/Lash_kursus.PNG" style="width: 300px; border-radius: 15%">
-      <h3>$ Pris</h3>
+        <div class="kursus_item">
+            <h2><strong>Vippeteknikker kursus</strong></h2>
+            <img src="png/Lash_kursus.PNG" alt="Vippeteknikker kursus værktøjer">
+      <h3>$ 8.500 kr,-</h3>
+      <p><span>Normalpris: 10.000 kr,-</span></p>
 
-      <p>Beskrivelse</p>
+      <p>Med dette kursus lærer du alt, hvad du skal bruge for at opstarte din karriere som vippeteknikker.</p>
+<p>Du får:</p>
+    <ul>
+        <li>Grundig gennemgang af teori.</li>
+        <li>Lash starterkit med alt du skal bruge, for at komme igang.</li>
+        <li>Træningsmanual.</li>
+        <li>Certifikat.</li>
+
+    </ul>
         </div>
 
-        <div class="Negle_kursus">
-            <h2>Negleteknikker kursus</h2>
-            <img src="jpg/Negle_kursus.jpg" style="width: 300px; border-radius: 15%">
-            <h3>$ Pris</h3>
+        <div class="kursus_item">
+            <h2><strong>Negleteknikker kursus</strong></h2>
+            <img src="jpg/Negle_kursus.jpg" alt="Negleteknikker station">
+            <h3>$ 6.500 kr,-</h3>
             
-            <p>Beskrivelse</p>
+            <p>Med dette kursus lærer du alt, hvad du skal bruge for at opstarte din karriere som negleteknikker.</p>
+            <p>Hos KB Beauty Academy arbejder vi kun med produkter, der er EU godkendte.</p>
+<p>Du får:</p>
+    <ul>
+        <li>Grundig gennemgang af teori.</li>
+        <li>Gelé negle starterkit med alt du skal bruge, for at komme igang.</li>
+        <li>Træningsmanual.</li>
+        <li>Certifikat.</li>
+
+    </ul>
         </div>
 
     </div>
@@ -140,25 +150,62 @@ body {
 
 
 
-
+<!-- FOOTER -->
 
 <footer>
-    <p>KB Beauty</p>
-    <p>Langgade 191, 2500 Valby</p>
-    <p>Tlf.: 53 53 18 82</p>
-    <p>Email: kbbeauty@gmail.com</p>
-    <p>CVR: 41839945</p>
 
-<p><strong>Åbningstider</strong></p>
-<p>Mandag: 10:00 - 17:00</p>
-<p>Tirsdag: LUKKET</p>
-<p>Onsdag: 10:00 - 19:00</p>
-<p>Torsdag: 10:00 - 19:00</p>
-<p>Fredag: 10:00 - 16:00</p>
-<p>Lørdag: LUKKET</p>
-<p>Søndag: 11:00 - 16:00</p>
+    <ul class="socialmedia">
+        <li><a href="https://www.instagram.com/kbbeauty.dk/" target="_blank"><img src="ikoner_png/insta_ikon.svg" alt="Instagram ikon" width="60px"></a></li>
+        <li><a href="https://www.facebook.com/KBBeauty.dk" target="_blank"><img src="ikoner_png/facebook_ikon.svg" alt="Facebook ikon" width="60px"></a></li>
+    </ul>
+
+    <div class="content_container">
+
+    <div class="footer_content">
+        <h2>Menu Links</h2>
+        <ul>
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="behandlinger.html">Behandlinger & priser</a></li>
+            <li><a href="efterpleje.html">Efterpleje</a></li>
+            <li><a href="kurser.html">Kurser</a></li>
+            <li><a href="betingelser.html">Betingelser</a></li>
+            <li><a href="om.html">Om KB Beauty</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+
+    <div class="footer_content">
+        <h2>KB Beauty</h2>
+        <ul>
+            <p>Adresse: Valby Langgade 191,</p>
+            <p>2500, Valby.</p>
+            <p>Tlf: +45 53531382</p>
+            <p>Email: kbbeauty.dk@gmail.com</p>
+            <p>v/ Kayce Bernardo</p>
+            <p>CVR: 41839945</p>
+        </ul>
+    </div>
+
+    <div class="footer_content">
+        <h2>Åbningstider</h2>
+        <ul>
+            <p>Mandag: 10.00 - 17.00</p>
+            <p>Tirsdag: Lukket</p>
+            <p>Onsdag: 10.00 - 19.00</p>
+            <p>Torsdag: 10.00 - 19.00</p>
+            <p>Fredag: 10.00 - 16.00</p>
+            <p>Lørdag: Lukket</p>
+            <p>Søndag: 11.00 - 16.00</p>
+        </ul>
+    </div>
+
+</div>
 
 </footer>
+
+
+
     
     <script>
         /* Dropdown menu åbner ved klik på bar-icon*/

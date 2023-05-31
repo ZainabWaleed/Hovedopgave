@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_3" data-name="Lag 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.15 50.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e3a7c4;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="9.37" y="12.14" width="36.4" height="26.81" rx="6.91" ry="6.91"/>
+  <path class="cls-1" d="m11.22,15.43c5.39,4.08,10.78,8.16,16.17,12.25,5.45-4.14,10.9-8.29,16.35-12.43"/>
+</svg>
